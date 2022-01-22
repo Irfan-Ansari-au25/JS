@@ -1,3 +1,5 @@
+// const { default: axios } = require("axios");
+
 console.log("From AJAX");
 // AJAX -> Asynchronous JavaScript And XML
 // XML
@@ -22,18 +24,18 @@ console.log("From AJAX");
 
 // fetch
 
-fetch("https://swapi.dev/api/planets/?page=3")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error(`Status code error : ${response.status}`);
-    }
-    response.json().then((data) => {
-      console.log(data);
-    });
-  })
-  .catch((error) => {
-    console.log("Error", error);
-  });
+// fetch("https://swapi.dev/api/planets/?page=3")
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error(`Status code error : ${response.status}`);
+//     }
+//     response.json().then((data) => {
+//       console.log(data);
+//     });
+//   })
+//   .catch((error) => {
+//     console.log("Error", error);
+//   });
 
 // multiple request
 
@@ -58,3 +60,10 @@ fetch("https://swapi.dev/api/planets/?page=3")
 //   .catch((error) => {
 //     console.log("Error", error);
 //   });
+
+// Axios <include or install axios first>
+// const axios = require("axios").default;
+
+axios.get("https://swapi.dev/api/planets/?page=3").then((res) => {
+  console.log(res.data);
+});
