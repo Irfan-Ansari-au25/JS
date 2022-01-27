@@ -79,6 +79,17 @@ slice - copy portion of array
 splice - remove/replace ele
 sort - sorts an array -> returns sorted array
 
+14. for(let item of items){}
+> Object.keys(obj) -> return list of keys
+> Object.values(obj) -> return list of values
+
+15. for (let key in obje){}
+-> iterate key in an object
+
+16. function funcName(){}
+
+
+
 // a = 1;
 // console.log(a)
 // var a;
