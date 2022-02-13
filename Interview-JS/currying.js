@@ -1,3 +1,5 @@
+// Infinite curryning function
+
 function add(x) {
   sum = x;
   return function res(y) {
